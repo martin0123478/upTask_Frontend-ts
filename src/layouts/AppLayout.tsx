@@ -16,7 +16,7 @@ export const AppLayout = () => {
 
 
             </header>
-            <section className="max-w-screen-2xl mx-auto mt-10">
+            <section className="max-w-screen-2xl mx-auto mt-10 p-5">
                 <Outlet />
             </section>
             <footer className="py-5 ">
