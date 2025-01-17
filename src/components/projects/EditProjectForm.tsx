@@ -30,8 +30,8 @@ export default function EditProjectForm({ data }: EditProjectFormProps) {
 
         },
         onSuccess: (data) => {
-            querryClient.invalidateQueries({ queryKey: ['projects'] })
-            querryClient.invalidateQueries({ queryKey: ['editProject', projectId] })
+            // querryClient.invalidateQueries({ queryKey: ['projects'] })
+            //querryClient.invalidateQueries({ queryKey: ['editProject', projectId] })
             toast.success(data)
             navigate('/')
 
