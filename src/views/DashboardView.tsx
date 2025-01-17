@@ -8,14 +8,14 @@ import { EllipsisVerticalIcon } from '@heroicons/react/20/solid'
 
 
 export const DashboardView = () => {
-    const { data, isError, isLoading } = useQuery({
+    const { data, isLoading } = useQuery({
         queryKey: ['projects'],
         queryFn: getProjects
     })
 
     if (isLoading) return 'Cargando...'
 
-    console.log(data)
+
     return (
         <>
             <h1 className="text-5xl font-black">Mis Proyectos</h1>
@@ -65,7 +65,7 @@ export const DashboardView = () => {
                                                     </Link>
                                                 </Menu.Item>
                                                 <Menu.Item>
-                                                    <Link to={``}
+                                                    <Link to={`/project/${project._id}/edit`}
                                                         className='block px-3 py-1 text-sm leading-6 text-gray-900'>
                                                         Editar Proyecto
                                                     </Link>
