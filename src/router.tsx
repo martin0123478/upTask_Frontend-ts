@@ -3,7 +3,8 @@ import { AppLayout } from '@/layouts/AppLayout'
 import { DashboardView } from '@/views/DashboardView'
 import CreateProjectView from './views/projects/CreateProjectView'
 import EditProjectView from './views/projects/EditProjectView'
-import { ProjectDetailView } from './views/projects/ProjectDetailView'
+import ProjectDetailView from './views/projects/ProjectDetailView'
+
 
 export default function Router() {
     return (
